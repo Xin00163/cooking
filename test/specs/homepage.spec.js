@@ -16,5 +16,12 @@ describe('Cookbook homepage', () => {
     HomePage.recipeStore.click();
     expect(browser.getUrl()).to.equal('http://localhost:3000/recipeStore');
   });
-  
+
+  it('should navigate to register page', () => {
+    HomePage.register.moveToObject();
+    HomePage.register.waitForVisible();
+    HomePage.register.click();
+    expect(browser.getUrl()).to.equal('http://localhost:3000/register')
+  })
+
 });
