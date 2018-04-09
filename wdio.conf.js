@@ -1,5 +1,5 @@
 exports.config = {
-    
+
     //
     // ==================
     // Specify Test Files
@@ -10,7 +10,7 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        './specs/**/*.js'
+        './test/specs/**/*.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -44,7 +44,7 @@ exports.config = {
         // 5 instances get started at a time.
         maxInstances: 5,
         //
-        browserName: 'firefox'
+        browserName: 'chrome'
     }],
     //
     // ===================
@@ -88,6 +88,7 @@ exports.config = {
     //
     // Default request retries count
     connectionRetryCount: 3,
+    services: ['selenium-standalone', 'chromedriver'],
     //
     // Initialize the browser instance with a WebdriverIO plugin. The object should have the
     // plugin name as key and the desired plugin options as properties. Make sure you have
@@ -123,13 +124,19 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: http://webdriver.io/guide/reporters/dot.html
-    // reporters: ['dot'],
+    reporters: ['spec'],
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
     mochaOpts: {
-        ui: 'bdd'
+        ui: 'bdd',
+        compilers: ['js:babel-register'],
+        timeout: 99999999
     },
+
+    before: function () {
+        global.expect = require('chai').expect;
+    }
     //
     // =====
     // Hooks
@@ -169,7 +176,7 @@ exports.config = {
      */
     // beforeCommand: function (commandName, args) {
     // },
-    
+
     /**
      * Hook that gets executed before the suite starts
      * @param {Object} suite suite details
@@ -206,7 +213,7 @@ exports.config = {
      */
     // afterSuite: function (suite) {
     // },
-    
+
     /**
      * Runs after a WebdriverIO command gets executed
      * @param {String} commandName hook command name
