@@ -7,7 +7,8 @@ describe('Cookbook search page', () => {
   });
 
   it('should render required elements', () => {
-
+    expect(Search.searchBtn.isVisible()).to.be.true;
+    expect(Search.inputTextBox.isVisible()).to.be.true;
   });
 
 });

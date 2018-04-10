@@ -1,4 +1,5 @@
 class Login {
+    get userNameField () { return '#inputUsername'; }
     get loginBtn () { return $('.btn.btn-primary'); }
     get contact() { return $('a[href="/contact"]'); }
     get recipeStore() { return $('a[href="/recipeStore"]'); }

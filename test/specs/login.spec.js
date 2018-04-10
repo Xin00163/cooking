@@ -10,6 +10,12 @@ describe('Cookbook login page', () => {
     expect(Login.loginBtn.isVisible()).to.be.true;
   });
 
+  it.only('should show alert when required fields are not filled in', () => {
+    browser.setValue(Login.userNameField, 'Xin')
+    Login.loginBtn.click();
+    expect(browser.alertText()).to.eq('Please fill in all fields')
+  });
+
   it('should navigate to contact page', () => {
       Login.contact.moveToObject();
       Login.contact.waitForVisible();
@@ -37,5 +43,5 @@ describe('Cookbook login page', () => {
       Login.search.click();
       expect(browser.getUrl()).to.equal('http://localhost:3000/');
   });
-  
+
 });
