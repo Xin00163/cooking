@@ -6,8 +6,10 @@ describe('Cookbook register page', () => {
     browser.url('/register');
   });
 
-  it('should render required elements', () => {
-
+  it.only('should show alert when required fields are not filled in', () => {
+    browser.setValue(Register.userNameField, 'Xin')
+    Register.registerBtn.click();
+    expect(browser.alertText()).to.eq('Please fill in all fields')
   });
 
 
