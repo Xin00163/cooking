@@ -11,9 +11,9 @@ describe('Cookbook login page', () => {
   });
 
   it.only('should show alert when required fields are not filled in', () => {
-    browser.setValue(Login.userNameField, 'Xin')
-    Login.loginBtn.click();
-    expect(browser.alertText()).to.eq('Please fill in all fields')
+      browser.setValue(Login.userNameField, 'Xin');
+      Login.loginBtn.click();
+      expect(browser.alertText()).to.eq('Please fill in all fields')
   });
 
   it('should navigate to contact page', () => {

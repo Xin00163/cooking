@@ -7,8 +7,13 @@ describe('Cookbook recipeStore page', () => {
   });
 
   it('should render required elements', () => {
-
+      expect(RecipeStore.backToSearchBtn.isVisible()).to.be.true;
+      expect(RecipeStore.recipeName.isVisible()).to.be.true;
+      expect(RecipeStore.cookingTime.isVisible()).to.be.true;
+      expect(RecipeStore.addRecipeBtn.isVisible()).to.be.true;
   });
+
+
 
 
 });
