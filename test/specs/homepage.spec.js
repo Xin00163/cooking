@@ -22,6 +22,6 @@ describe('Cookbook homepage', () => {
     HomePage.register.waitForVisible();
     HomePage.register.click();
     expect(browser.getUrl()).to.equal('http://localhost:3000/register')
-  })
+  });
 
 });
