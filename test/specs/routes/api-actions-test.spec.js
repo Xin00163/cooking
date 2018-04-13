@@ -19,4 +19,19 @@ describe('Cookbook recipestore page', () => {
     .then((res) => {
       expect(res.body).to.be.an('array').that.is.empty;
     }));
+
+  it('shoud add document to documentlist', () => request
+    .post(`${baseUrl}documents/adddocument`)
+    .send({
+      recipeName: 'mapo tofu',
+      cookingTime: '10m',
+      ingredients: 'tofu',
+      method: 'tofu',
+    })
+    .then((res) => {
+      expect(res.status).to.equal(200);
+    })
+    .catch((err) => {
+      throw err;
+    }));
 });
