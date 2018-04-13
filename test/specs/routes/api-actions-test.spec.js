@@ -13,4 +13,10 @@ describe('Cookbook recipestore page', () => {
     .then((res) => {
       expect(res.status).to.equal(200);
     }));
+
+  it('should return documentlist', () => request
+    .get(`${baseUrl}documents/documentlist`)
+    .then((res) => {
+      expect(res.body).to.be.an('array').that.is.empty;
+    }));
 });

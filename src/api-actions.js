@@ -22,7 +22,7 @@ const actions = {
     });
   },
   getDocument(collection, userId, query, next) {
-    collection.find({ userID: userId }, {}, (e, docs) => {
+    collection.find({ userID: userId }, {}, (e, dcs) => {
       const recipes = [];
       docs.forEach((recipe) => {
         if (_.includes(recipe.ingredients.toUpperCase(), query.toUpperCase())) {
