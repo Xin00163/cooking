@@ -24,7 +24,6 @@ router.get('/documentlist/:query', (req, res) => {
 
 router.post('/adddocument', (req, res) => {
   const collection = req.db.get(config.dataBase);
-
   apiActions.addDocument(collection, req.body, () => {
     res.send();
   });

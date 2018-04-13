@@ -31,7 +31,9 @@
         "monk": "^3.1.2",
         "morgan": "~1.5.3",
         "request": "^2.79.0",
-        "serve-favicon": "~2.2.1"
+        "serve-favicon": "~2.2.1",
+        "superagent": "^3.8.2",
+        "superagent-mock": "^3.7.0"
     },
     "devDependencies": {
         "babel-cli": "^6.26.0",

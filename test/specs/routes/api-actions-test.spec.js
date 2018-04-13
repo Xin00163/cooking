@@ -1,16 +1,16 @@
-// var apiActions = require('../../../lib/api-actions');
-// var request = require("request");
-// var config = require ('../../../config.json');
-// var db = require('monk')('localhost:27017/sg');
-// var baseUrl = "http://localhost:3000/";
-// var chai = require('chai');
-// var assert = chai.assert;
-//
-// describe('API actions', function() {
-//   it('returns api response is succcessful', function(done) {
-//     request.get({ url: baseUrl + 'recipeStore'},
-//         function(error, response, body) {
-//               expect(response.statusCode).to.equal(200);
-//         });
-//   });
-// });
+import { expect } from 'chai';
+import * as request from 'superagent';
+
+const apiActions = require('../../../src/api-actions');
+const config = require('../../../config.json');
+const db = require('monk')('localhost:27017/sg');
+
+const baseUrl = 'http://localhost:3000/';
+
+describe('Cookbook recipestore page', () => {
+  it('should return 200 status', () => request
+    .get(`${baseUrl}recipeStore`)
+    .then((res) => {
+      expect(res.status).to.equal(200);
+    }));
+});

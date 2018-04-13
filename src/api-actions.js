@@ -1,4 +1,5 @@
 
+import Request from 'superagent';
 
 const http = require('http');
 const config = require('../config');
