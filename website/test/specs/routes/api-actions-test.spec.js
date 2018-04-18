@@ -3,7 +3,7 @@ import * as request from 'superagent';
 
 const apiActions = require('../../../src/api-actions');
 const config = require('../../../config.json');
-const db = require('monk')('localhost:27017/sg');
+const db = require('monk')('mongo:27017/sg');
 
 const baseUrl = 'http://localhost:3000/';
 
