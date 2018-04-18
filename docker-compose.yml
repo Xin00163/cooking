@@ -1,0 +1,18 @@
+version: "2"
+services:
+  app:
+    container_name: "cooking"
+    restart: always
+    build: .
+    ports:
+      - "3000:3000"
+    links:
+      - mongo
+  mongo:
+    container_name: "mongodbtest"
+    image: mongo:3.0.6
+    volumes:
+      - ./data/db:/data/db
+    ports:
+      - "27017:27017"
+    command: mongod

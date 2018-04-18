@@ -8,4 +8,5 @@ WORKDIR /app
 
 RUN npm install
 
+
 ENTRYPOINT npm run start-dev
