@@ -12,7 +12,7 @@
         "restore": "mongorestore",
         "reset": "npm run drop && npm run restore",
         "droprestore": "mongorestore --drop",
-        "test": "wdio wdio.conf.js",
+        "test": "wdio ./website/wdio.conf.js",
         "cleantest": "npm run droprestore && npm test"
     },
     "dependencies": {

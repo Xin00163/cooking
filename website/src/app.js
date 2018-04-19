@@ -9,7 +9,8 @@ const bodyParser = require('body-parser');
 const monk = require('monk');
 
 console.log('before monk');
-const db = monk('mongo:27017/sg');
+const db = monk('localhost:27017/sg');
+// const db = monk('mongo:27017/sg');
 console.log('after monk');
 const routes = require('./routes/index');
 const documents = require('./routes/documents');
