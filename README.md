@@ -1,12 +1,19 @@
-only external dependency other than the node modules is mongodb:
+# Cooking
 
-https://treehouse.github.io/installation-guides/mac/mongo-mac.html
+### User instructions
 
+- Check if you have node installed by running `node -v`. If not, please install [node](https://nodejs.org/en/download/)
 
-once you have run mongodb in a /data directory you can run the application
+- Install MongoDB 
 
-simple run
+- Install or export java version "1.8.0_172"
 
-` npm start `
+- Clone the repo
 
-and go to localhost:3000
+- Install dependencies by running `npm install`
+
+- To launch the app, run `npm run start-dev` then navigate to `http://localhost:3000`
+
+- Use `npm test` to run the test
+
+- Use `docker-compose up` to spin up a selenium grid
