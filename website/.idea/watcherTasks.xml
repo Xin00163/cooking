@@ -4,11 +4,11 @@
     <TaskOptions isEnabled="false">
       <option name="arguments" value="$FileName$" />
       <option name="checkSyntaxErrors" value="true" />
-      <option name="description" value="Compiles .pug and .jade files into .html files" />
+      <option name="description" value="Compiles .pug and .pug files into .html files" />
       <option name="exitCodeBehavior" value="ERROR" />
-      <option name="fileExtension" value="jade" />
+      <option name="fileExtension" value="pug" />
       <option name="immediateSync" value="true" />
-      <option name="name" value="Pug/Jade" />
+      <option name="name" value="Pug/pug" />
       <option name="output" value="$FileNameWithoutExtension$.html" />
       <option name="outputFilters">
         <array />

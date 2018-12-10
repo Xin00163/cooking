@@ -30,7 +30,6 @@ describe('Cookbook recipestore page', () => {
     })
     .then((res) => {
       expect(res.status).to.equal(200);
-      console.log(res.body);
     })
     .catch((err) => {
       throw err;

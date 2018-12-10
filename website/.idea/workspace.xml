@@ -21,13 +21,13 @@
       <change type="MOVED" beforePath="$PROJECT_DIR$/routes/README.md" afterPath="$PROJECT_DIR$/src/lib/routes/README.md" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/routes/documents.js" afterPath="$PROJECT_DIR$/src/lib/routes/documents.js" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/src/lib/routes/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/contact.jade" afterPath="$PROJECT_DIR$/src/public/views/contact.jade" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/error.jade" afterPath="$PROJECT_DIR$/src/public/views/error.jade" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/index.jade" afterPath="$PROJECT_DIR$/src/public/views/index.jade" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/layout.jade" afterPath="$PROJECT_DIR$/src/public/views/layout.jade" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/navbar.jade" afterPath="$PROJECT_DIR$/src/public/views/navbar.jade" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/recipe.jade" afterPath="$PROJECT_DIR$/src/public/views/recipe.jade" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/recipestore.jade" afterPath="$PROJECT_DIR$/src/public/views/recipestore.jade" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/contact.pug" afterPath="$PROJECT_DIR$/src/public/views/contact." />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/error.pug" afterPath="$PROJECT_DIR$/src/public/views/error.pug" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/index.pug" afterPath="$PROJECT_DIR$/src/public/views/index.pug" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/layout.pug" afterPath="$PROJECT_DIR$/src/public/views/layout.pug" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/navbar.pug" afterPath="$PROJECT_DIR$/src/public/views/navbar.pug" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/recipe.pug" afterPath="$PROJECT_DIR$/src/public/views/recipe.pug" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/recipestore.pug" afterPath="$PROJECT_DIR$/src/public/views/recipestore.pug" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/www" afterPath="$PROJECT_DIR$/bin/www" />
     </list>
     <ignored path="cookbook-express.iws" />
@@ -51,8 +51,8 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/views/index.jade">
+      <file leaf-file-name="index.pug" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/views/index.pug">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
               <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
@@ -112,8 +112,8 @@
         <option value="$PROJECT_DIR$/src/package.json" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/lib/routes/documents.js" />
-        <option value="$PROJECT_DIR$/public/views/contact.jade" />
-        <option value="$PROJECT_DIR$/public/views/index.jade" />
+        <option value="$PROJECT_DIR$/public/views/contact.pug" />
+        <option value="$PROJECT_DIR$/public/views/index.pug" />
         <option value="$PROJECT_DIR$/public/javascripts/recipes.js" />
         <option value="$PROJECT_DIR$/public/javascripts/search.js" />
         <option value="$PROJECT_DIR$/lib/routes/index.js" />
@@ -438,7 +438,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/contact.jade">
+    <entry file="file://$PROJECT_DIR$/public/views/contact.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
@@ -454,7 +454,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/layout.jade">
+    <entry file="file://$PROJECT_DIR$/public/views/layout.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
@@ -462,7 +462,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/index.jade">
+    <entry file="file://$PROJECT_DIR$/public/views/index.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />

@@ -23,7 +23,7 @@ app.use((req, res, next) => {
 });
 
 app.set('views', path.join(__dirname, '../public/views'));
-app.set('view engine', 'jade');
+app.set('view engine', 'pug');
 app.use(favicon(path.join(__dirname, '../public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -41,7 +41,7 @@ app.use((req, res, next) => {
 });
 
 if (app.get('env') === 'development') {
-  app.use((err, req, res, next) => {
+  app.use((err, req, res) => {
     res.status(err.status || 500);
     res.render('error', {
       message: err.message,
@@ -50,7 +50,7 @@ if (app.get('env') === 'development') {
   });
 }
 
-app.use((err, req, res, next) => {
+app.use((err, req, res) => {
   res.status(err.status || 500);
   res.render('error', {
     message: err.message,

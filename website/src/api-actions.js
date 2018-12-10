@@ -2,8 +2,8 @@
 import Request from 'superagent';
 
 const http = require('http');
-const config = require('../config');
 const _ = require('lodash');
+const config = require('../config');
 
 const actions = {
   addDocument(collection, content, next) {
